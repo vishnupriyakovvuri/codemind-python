@@ -1,17 +1,7 @@
 n=int(input())
-if n%2==0:
-    t=n//2
-else:
-    t=(1+n)//2
-    
+c=65
 for i in range(1,n+1):
-    for j  in range(1,n-1):
-        #if(j<=t):
-        print(j,end="")
-        #else:
-        #    if(j-t!=t):
-          #      print(j-t,end="")
-    for j in range(n-3,0,-1):
-        print(j,end="")
-        
+    for j  in range(1,n+1):
+        print(chr(c),end=" ")
+    c=c+1
     print("")
