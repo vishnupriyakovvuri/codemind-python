@@ -1,16 +1,16 @@
-n=int(input())
-p=n
-d=-1
-flag=0
-while n>0:
-    d+=1
-    n=n//10
-while p>0:
-    r=p//int(pow(10,d))
-    if r==6 and flag==0:
-        print("9",end="")
-        flag=1
+import math
+a=int(input())
+d=int(math.log(a,10))
+f=0
+r=1
+while a>0:
+ if r!=0 :   
+    r=a//pow(10,d)
+    if(r==6 and f==0):
+        print(9,end="")
+        f=1
     else:
         print(r,end="")
-    p=p%int(pow(10,d))
-    d-=1
+ a=int(a%pow(10,d))
+ d-=1
+        
