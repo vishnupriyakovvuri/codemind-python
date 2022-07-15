@@ -1,15 +1,14 @@
 a=input()
 a=a.lower()
-b=''
 c=[]
+e=[]
+d=''
 for i in a:
-    if i==" ":
-        continue
-    else:
-        b+=i
-for i in b:
-    if b.count(i)==1:
+    if i!=" " and a.count(i)==1:
         c.append(i)
 c=set(c)
-print(len(c))
-    
+e=list(c)
+e.sort()
+for i in e:
+    d+=i
+print(len(d))    
