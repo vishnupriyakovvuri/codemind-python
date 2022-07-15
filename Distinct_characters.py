@@ -1,21 +1,16 @@
 a=input()
 a=a.lower()
-b=''
-k=''
 c=[]
-d=[]
+e=[]
+d=''
 for i in a:
-    if i==" ":
-        continue
-    else:
-        b+=i
-for i in b:
-    if b.count(i)==1:
+    if i!=" ":
         c.append(i)
 c=set(c)
-d=list(c)
-d.sort()
-for i in d:
-    k+=i
-print(k)    
+e=list(c)
+e.sort()
+for i in e:
+    d+=i
+print(d)    
+
 
