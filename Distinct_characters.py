@@ -4,7 +4,7 @@ c=[]
 e=[]
 d=''
 for i in a:
-    if i!=" " and a.count(i)==1:
+    if i!=" ":
         c.append(i)
 c=set(c)
 e=list(c)
