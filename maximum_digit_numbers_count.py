@@ -1,28 +1,11 @@
-def digit(n):
-    c=0
-    if(n<0):
-        n=abs(n)
-    if(n==0):
-        c=1
-    while n>0:
-        r=n%10
-        c+=1
-        n=n//10
-    return c
-n=int(input())    
+n=int(input())
 a=list(map(int,input().split()))
-b=[]
-c=[]
-for i in range(len(a)):
-    b.append(digit(a[i]))
-for i in range(len(b)):
-    if(b[i]==max(b)):
-        if b[i] not in c:
-            c.append(a[i])
-for i in c:
-    print(i,end=" ")
-            
-    
-    
-        
+d=[]
+e=[]
+for i in a:
+    d.append(len(str(i)))
+for i in range(0,len(d)):
+    if d[i]==max(d):
+        e.append(a[i])
+print(*e)        
         
