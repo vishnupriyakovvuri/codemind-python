@@ -1,0 +1,28 @@
+def roman(k):
+    if (k=='I'):
+        return 1
+    elif(k=="V"):
+        return 5
+    elif(k=="X"):
+        return(10)
+    elif(k=="L"):
+        return(50)
+    elif(k=="C"):
+        return(100)
+    elif(k=="D"):
+        return(500)
+    elif(k=="M"):
+        return(1000)
+    else:
+        return(0)
+a=input()
+a=a[::-1]
+s=0
+t=0
+for i in a:
+    if roman(i)>=s:
+        t+=roman(i)
+    else:
+        t-=roman(i)
+    s=roman(i)    
+print(t)        
