@@ -1,0 +1,28 @@
+s1=input()
+s1=s1.lower()
+s2=input()
+s2=s2.lower()
+a=[]
+b=[]
+k=[]
+for i in s1:
+    if i !=" " and i not in a:
+        a.append(i)
+for i in s2:
+    if i !=" " and i not in b:
+        b.append(i)   
+for i in a:
+    if i in b:
+        k.append(i)
+l=''        
+k.sort()
+for i in k:
+    l+=i
+if len(l)==0:
+    print('-1')
+else:
+    print(l)
+
+
+        
+    
