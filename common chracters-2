@@ -1,0 +1,23 @@
+s=input()
+s=s.lower()
+a=s.split(" ")
+c=a[0]
+t=[]
+for i in a:
+    p=''
+    for j in i:
+        if j in c:
+            p+=j
+    t.append(p)
+t.sort() 
+k=t[0]
+l=[]
+for i in t:
+    p=''
+    for j in i:
+        if j in k:
+            p+=j
+    l.append(p) 
+print(len(min(l)))    
+            
+        
