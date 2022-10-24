@@ -1,0 +1,14 @@
+a=int(input())
+b=int(input())
+c=[]
+p=0
+for i in range(a,b+1):
+      c.append(i)
+for i in range(0,len(c)):
+    for j in range(i,len(c)):
+        s=0
+        for k in range(i,j+1):
+            s+=c[k]
+        if s%2!=0:
+            p+=1
+print(p)        
