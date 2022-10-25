@@ -1,0 +1,11 @@
+n=int(input())
+a=list(map(int,input().split()))
+s=-1000
+for i in range(0,n):
+    for j in range(i,n):
+        t=0
+        for k in range(i,j+1):
+            t+=a[k]
+        if t>s:
+            s=t
+print(s)            
