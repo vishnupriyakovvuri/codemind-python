@@ -1,0 +1,13 @@
+t=int(input())
+while(t!=0):
+    n=int(input())
+    a=list(map(int,input().split()))
+    c=0
+    if len(a)>1:
+        for i in range(0,n-1):
+            if a[i]>a[i+1]:
+                c+=1
+    c+=1
+    print(c)
+    t-=1
+           
