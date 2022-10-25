@@ -1,0 +1,15 @@
+def fun(a,n):
+    c=[]
+    c.append(a[n-1])
+    for i in range(0,n-1):
+        c.append(a[i])
+    return c    
+n,k,q=map(int,input().split())
+a=list(map(int,input().split()))
+while(k>0):
+    a=fun(a,n)
+    k-=1
+while(q!=0):
+    p=int(input())
+    print(a[p])
+    q-=1
