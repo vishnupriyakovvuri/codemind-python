@@ -1,0 +1,22 @@
+t=int(input())
+while(t!=0):
+    n=int(input())
+    a=list(map(int,input().split()))
+    c=-1000
+    q=0
+    for i in a:
+        if i<0:
+            q+=1
+    for i in range(0,n):
+        for j in range(0,n):
+            s=0
+            for k in range(i,j+1):
+                s+=a[k]
+            if s>c:
+                c=s
+    if q==n:
+        print(max(a))
+    else:
+        print(c)
+    t-=1    
+                
