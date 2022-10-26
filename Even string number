@@ -1,0 +1,8 @@
+if len(e)==0:
+    print('-1')
+else:
+    for i in range(len(a)-1,-1,-1):
+            p+=str(a[i])
+    p+=str(k) 
+    print(p)
+        
