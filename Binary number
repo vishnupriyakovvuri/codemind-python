@@ -1,0 +1,14 @@
+def binary(i,n):
+    s=''
+    while(n!=0):
+        s+=str(i%2)
+        i=i//2
+        n-=1
+    return(s)
+n=int(input())
+t=pow(2,n)
+for i in range(0,t):
+    k=binary(i,n)
+    print(k[::-1])
+    
+    
