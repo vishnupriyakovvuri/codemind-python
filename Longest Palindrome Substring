@@ -1,0 +1,12 @@
+n=input()
+p=0
+for i in range(0,len(n)):
+    for j in range(i,len(n)):
+        t=''
+        for k in range(i,j+1):
+            t+=n[k]
+        if t==t[::-1] and len(t)>p:
+            s=''
+            p=len(t)
+            s+=t
+print(s) 
