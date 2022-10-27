@@ -1,0 +1,18 @@
+n=int(input())
+a=list(map(int,input().split()))
+s=-1000
+p=0
+q=0
+for i in range(0,n):
+    for j in range(i,n):
+        t=[]
+        for k in range(i,j+1):
+            t.append(a[k])
+        if len(t)>s and t.count(1)==t.count(0):
+            p=i
+            q=j
+            s=len(t)
+if q==0:
+    print('-1')
+else:
+    print(p,q)
