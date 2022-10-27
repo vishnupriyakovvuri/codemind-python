@@ -1,0 +1,8 @@
+s=input()
+a=[]
+for i in s:
+    a.append(s.count(i))
+if a.count(a[0])==len(a)-1 or a.count(a[0])==len(a):
+    print('Valid String')
+else:
+    print('Not Valid')
