@@ -1,0 +1,27 @@
+t=int(input())
+while(t!=0):
+    k=int(input())
+    n=k%296
+    if(n>296):
+        n=n-296
+    if(n%10==0):
+        print('sunday')
+    elif(n%10==1):
+        print('monday')
+    elif(n%10==2):
+        print('tuesday')
+    elif(n%10==3):
+        print('wednesday')
+    elif(n%10==4):
+        print('thursday')
+    elif(n%10==5):
+        print('friday') 
+    elif(n%10==6):
+        print('saturday')  
+    elif(n%10==7):
+        print('kryptonday')
+    elif(n%10==8):
+        print('coluday')
+    elif(n%10==9):
+        print('daxamday')    
+    t-=1
