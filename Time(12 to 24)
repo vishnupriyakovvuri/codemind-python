@@ -1,0 +1,15 @@
+s=input()
+a=[]
+for i in range(0,5):
+    a.append(s[i])
+if(s[:2]=='12' and s[-2:]=='AM'):
+    print('00'+s[2:5])
+elif(s[:2]=='12' and s[-2:]=='PM'):
+    print(s[0:5])
+elif(int(s[:2])<=11 and s[-2:]=='AM'):
+    print(s[0:5])
+else:
+    k=''
+    k+=str(int(s[:2])+12)
+    print(k+s[2:5])
+    
