@@ -1,0 +1,15 @@
+n=input()
+p=0
+for i in range(0,len(n)):
+    for j in range(i,len(n)):
+        t=''
+        for k in range(i,j+1):
+            if n[k] not in 'aeiou':
+                break
+            else:
+               t+=n[k]
+        if len(t)>p:
+            s=''
+            p=len(t)
+            s+=t
+print(len(s))
