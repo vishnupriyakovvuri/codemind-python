@@ -1,0 +1,14 @@
+s=input()
+d=len(s)+1
+i=-1
+t=[]
+for k in s:
+    if k=='I':
+        i=i+1
+        t.append(i)
+    elif k=='D':
+        d=d-1
+        t.append(d)
+t.append(i+1)        
+print(*t)        
+        
