@@ -1,0 +1,13 @@
+n=int(input())
+k=n//2
+for i in range(0,k+1):
+    p=pow(2,i)
+    if(p<=n):
+        t=p
+    else:
+        break
+#print(p,t)
+c=n-t
+d=p-n
+l=min(c,d)
+print(l)
